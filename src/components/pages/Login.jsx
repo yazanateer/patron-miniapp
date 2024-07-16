@@ -23,8 +23,11 @@ export const Login = ({ onLoginSuccess }) => {
             return response.json();
         })
         .then(data => {
-            alert('Login success');
             console.log(data);
+            if (data.role !== "MINIAPP_USER") {
+                throw new Error('Access denied: Only miniapp users can enter here');
+            }
+            alert('Login success');
             onLoginSuccess(data);
             navigate('/PatronApp');
         })
