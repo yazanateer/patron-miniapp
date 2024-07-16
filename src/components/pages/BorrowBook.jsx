@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./css_pages/Borrow.css";
 
-export const BorrowBook = () => { 
+export const BorrowBook = ({user}) => { 
     const [title, setTitle] = useState('');
     const [results, setResults] = useState([]);
-    const [userDetails] = useState({ superapp: "citylibrary", email: "super@mail.com" }); 
+    const [userDetails] = useState({ superapp: "citylibrary", email: user ? user.userid.email: "" }); 
 
     const limit_description = (description) => {
         if (!description) {
@@ -84,9 +84,11 @@ export const BorrowBook = () => {
 
             if (response.data) {
                 console.log("Book borrowed successfully:", response.data);
+                alert("Book borrowed successfully");
             }
         } catch (error) {
             console.error("Error borrowing the book:", error);
+            alert("Error borrowing the book:", error);
         }
     };
 

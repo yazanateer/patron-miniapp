@@ -23,7 +23,7 @@ function App() {
         <Route path="/Login" element={<Login onLoginSuccess={handleLoginSuccess} />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/SearchBook" element={<SearchBook />} />
-        <Route path="/BorrowBook" element={<BorrowBook />} />
+        <Route path="/BorrowBook" element={<BorrowBook user={user} />} />
         <Route path="/PatronApp" element={<PatronApp user={user} />} />
       </Routes>
     </div>
