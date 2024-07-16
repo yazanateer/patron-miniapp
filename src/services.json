@@ -1,0 +1,21 @@
+[
+
+    {
+        "id": 1,
+        "service_name": " Patron application ",
+        "describe" : "The patron application is the application where the can benefits from various service the citylibrary system provide"
+    },
+
+    {
+        "id": 2,
+        "service_name": " Librarian dashboard ",
+        "describe" : "In each library the librarian can enter the dashboard to view a different informations about the library with the patron, books, add/remove books and more ..."
+    },
+
+    {
+        "id": 3,
+        "service_name": " Room reservation ",
+        "describe" : "Each library have a different rooms in the library, that the patrons can reserve a room"
+    }
+
+]
