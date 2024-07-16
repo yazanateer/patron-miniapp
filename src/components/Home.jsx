@@ -14,7 +14,7 @@ export const Home = () => {
 
                     <div className="paragraph-city">
                     <p>The city library system aims to streamline operations and services across multiple libraries in the city <br/>
-                    Here you can borrow books and reserve a rooms , also the ability to search for a book according to a criteria and get the GPS locations about the library that have this book<br/></p>
+                    Here you can borrow books and reserve a rooms , also the ability to search for a book according to a criteria and get the information about the book , and where you can find it<br/></p>
                     </div>
                 
                 </div>
